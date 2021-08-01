@@ -1,0 +1,5 @@
+// great .jar executable
+>> mvn install
+
+// to run the .jar application
+>> java -jar target/mobile-app-ws-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,16 @@
+package com.baraabyes.photoapp.api.users.controllers;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+    @GetMapping(value = {"/status","status/check"})
+    public ResponseEntity getUser(){
+        String msg = "Hello! from users microservice...";
+        return ResponseEntity.ok(msg);
+    }
+}
